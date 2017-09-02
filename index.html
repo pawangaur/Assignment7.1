@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Head of the Root -->
+<head> <!-- child sub root of the html tag as head tag  -->
+	<meta charset="UTF-8">
+	<title>Global Variable</title>
+</head>
+<body>
+<!-- it is a body tag-->
+ 
+ <div id="Output">
+     	
+     </div>
+   
+	<script>
+      var global_count=0;
+     var counter=function()
+     {
+        global_count+=1;
+        return global_count;
+     };
+     counter();
+     counter();
+     counter();
+
+     document.getElementById("Output").innerHTML = global_count;
+
+	</script>
+</body>
+</html>
